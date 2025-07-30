@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteBase /RPL/
+
+# Aturan spesifik untuk KASIR
+RewriteRule ^kasir/([a-zA-Z0-9]+)$ kasir1.php?x=$1
+
+# Aturan spesifik untuk PELAYAN
+RewriteRule ^pelayan/([a-zA-Z0-9]+)$ pelayan1.php?x=$1
+
+# Aturan spesifik untuk KOKI
+RewriteRule ^koki/([a-zA-Z0-9]+)$ koki.php?x=$1
